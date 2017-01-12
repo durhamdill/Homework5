@@ -44,13 +44,13 @@ console.log(max(85,60))
 function math (num1, num2, operator) {
   var answer;
 
-  if (operator = "+") {
+  if (operator == "+") {
     answer = num1 + num2;
-  } else if (operator = "-") {
+  } else if (operator == "-") {
     answer = num1 - num2;
-  } else if (operator = "/") {
+  } else if (operator == "/") {
     answer = num1 / num2;
-  } else if (operator = "*") {
+  } else if (operator == "*") {
     answer = num1 * num2;
   }
 
