@@ -12,11 +12,11 @@ console.log(twoPlusTwo) // 4
 /* Exercise2 */
 
 function yell(string1) {
-  var upper = string1.toUpperCase();
+  var upper = console.log(string1.toUpperCase());
   return upper;
 };
 
-console.log(yell("say what???????"))
+yell("say what???????");
 
 
 function yell10(string1) {
@@ -25,6 +25,21 @@ function yell10(string1) {
 };
 
 console.log(yell10("dook lost! "))
+
+
+function yell10(string1) {
+  var upper = string1.toUpperCase();
+  for (var i = 0; i <= 9; i++) {
+    console.log(upper);
+  }
+};
+
+yell10("katy");
+
+
+for (var i = 0; i <= 100; i += 2) {
+  console.log(i);
+}
 
 
 /* Exercise3 */
@@ -48,10 +63,12 @@ function longest(string1, string2) {
   var longer;
   if (string1.length > string2.length) {
     longer = string1;
-  } else {
-    longer = string2;
-  }
-  return longer;
+  } else if (string1.length < string2.length) {
+      longer = string2;
+    } else {
+      console.log('equal length');
+    }
+    return longer;
   }
 
 console.log(longest("elephant", "tiger"))
@@ -75,3 +92,20 @@ function isVowel(character) {
   console.log(isVowel("E"))
   console.log(isVowel("a"))
   console.log(isVowel("z"))
+
+
+  function isVowel(letter) {
+
+    var isAVowel;
+
+    var vowels = ["a","A","e","E","i","I","o","O","u","U"];
+
+    for (var i = 0; i <= vowels.length; i++) {
+      if (letter == vowels[i]) {
+        isAVowel = true;
+      } else {
+        isAVowel = false;
+      }
+    }
+
+    }
